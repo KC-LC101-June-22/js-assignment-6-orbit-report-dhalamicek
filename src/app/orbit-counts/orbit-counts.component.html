@@ -1,6 +1,14 @@
 <h3>Satellite Count:</h3>
-<div class="counts">
-	<div>Total: <span class="counts-total">NaN</span></div>
+<div class="counts" *ngFor="let satellite of satellites">
+	
+	<p>Total: <span class="counts-total"></span></p>
+	<p class.counts="satellite.countByType(Space Debris: string)">Space Debris: </p>
+	<p>Communication: <span class="counts-communication"></span></p>
+	<p>Probe: <span class="counts-probe"></span></p>
+	<p>Positioning: <span class="counts-positioning"></span></p>
+	<p>Space Station: <span class="counts-space station"></span></p>
+	<p>Telescope: <span class="counts-telescope"></span></p>
 </div>
 
 <!-- TODO 4: add logic to count number of satellites displayed -->
+
